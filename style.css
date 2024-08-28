@@ -8,20 +8,51 @@ header, .hero, footer {
     
 }
 
-.header {
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-title {
     font-size: 24px;
     color: #F9FaF8;
+    margin: 10px;
+    margin-left: 50px;
 }
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin-right: 50px;
+}
+
 
 li, .hero-secondary {
     font-size: 18px;
     color: #E5E7Eb;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-text, .hero-image {
+    margin: 30px;
 }
 
 .hero-main {
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FaF8;
+    margin: 10px;
 }
 
 button {
@@ -29,6 +60,9 @@ button {
     color: #E5E7Eb;
     border-radius: 5px;
     border: 2px solid #3882F6;
+    margin: 10px;
+    height: 30px;
+    width: 70px;
 }
 
 .action-button {
@@ -37,6 +71,11 @@ button {
 
 .information-section {
     color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 h2 {
@@ -44,8 +83,33 @@ h2 {
     font-weight: extra-bold;
 }
 
+.information-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.information-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin: 20px;
+}
+
+.information-images p {
+    font-size: 15px;
+    font-weight: 300;
+}
+.information-image {
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 .quote-section {
     background-color: #E5E7Eb;
+    padding: 200px;
 }
 
 .quote-text {
@@ -57,13 +121,25 @@ h2 {
 
 .quote-name {
     color: #1f2937;
+    padding-left: 600px;
 }
 
 .call-action {
     background-color: #3882F6;
     color: #E5E7Eb;
+    margin: 100px;
+    border-radius: 10px;
+    height: 150px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 footer {
     color: #E5E7Eb;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
